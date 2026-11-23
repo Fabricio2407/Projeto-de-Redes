@@ -43,7 +43,7 @@ trabalho-redes/
 | Issue | Atividade | Prioridade | Dependências | Responsável | Concluída |
 |---|---|---|---|---|---|
 | #01 | Estruturar o repositório | Alta | Nenhuma | A definir | ☐ (validação local concluída) |
-| #02 | Configurar as máquinas e a rede | Crítica | #01 | A definir | ☐ |
+| #02 | Configurar as máquinas e a rede | Crítica | #01 | A definir | ☐ (documentação pronta; laboratório pendente) |
 | #03 | Desenvolver servidor HTTP em Python | Crítica | #01, #02 | A definir | ☐ |
 | #04 | Desenvolver servidor DNS UDP em Python | Crítica | #01, #02 | A definir | ☐ |
 | #05 | Desenvolver o cliente de testes Python | Crítica | #03, #04 | A definir | ☐ |
@@ -108,6 +108,15 @@ A sintaxe de `tools/netprobe.py` foi validada com `compile(..., 'exec')`, sem ex
 **Dependências:** #01 · **Responsável:** _a definir_ · **Prazo:** _a definir_  
 
 **Objetivo:** Garantir que A e B troquem pacotes reais, identificáveis pelo Wireshark.
+
+**Preparação documental — 23/11/2026**
+
+- [x] Criar [manual reproduzível Windows/Linux](docs/preparacao-ambiente.md) com identificação de IPs, conectividade, portas, firewall, Wireshark e troubleshooting.
+- [x] Complementar a [topologia](docs/topologia.md) com campos pendentes por máquina, interfaces, evidências, data e responsável.
+- [x] Registrar diagnóstico local de leitura e suas limitações, separado das máquinas reais.
+- [x] Disponibilizar matriz de validação e link no README.
+
+**Status da Issue #02:** preparação documental concluída; configuração e validação nas máquinas do laboratório pendentes. Nenhum teste A/B foi executado. O ambiente Codex não foi atribuído a A ou B. Nenhuma regra de firewall, serviço ou captura foi iniciada; NetProbe não foi executado nem alterado. A validação funcional de TCP/80 e UDP/53 depende dos servidores das Issues #03/#04; confirmação completa do tráfego depende também de #05/#06. Responsável pela preparação: Codex; responsável pela validação real: a definir.
 
 **Passo a passo**
 - [ ] Definir a máquina A como cliente e a máquina B como servidor; usar duas máquinas na mesma LAN ou VMs com rede adequada.

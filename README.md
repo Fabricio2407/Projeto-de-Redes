@@ -19,7 +19,7 @@ flowchart LR
     W["Wireshark — captura na interface de B"] -.->|"Observa pacotes de entrada e saída"| B
 ```
 
-Os endereços e a interface ainda serão definidos na Issue #02. Consulte a [topologia planejada](docs/topologia.md).
+Os endereços e a interface ainda serão definidos e validados nas máquinas do laboratório. Consulte a [topologia planejada](docs/topologia.md) e o [manual de preparação do ambiente — Issue #02](docs/preparacao-ambiente.md), com procedimentos Windows/Linux, diagnóstico local e matriz de validação.
 
 ## Tecnologias
 
@@ -45,6 +45,7 @@ Projeto-de-Redes/
 │   └── netprobe.py           # ferramenta auxiliar de diagnóstico e inventário
 ├── docs/
 │   ├── topologia.md          # planejamento e campos a preencher na issue #02
+│   ├── preparacao-ambiente.md # configuração e validação manual do laboratório
 │   └── evidencias/
 │       └── .gitkeep          # reserva para evidências futuras
 ├── tests/
@@ -192,4 +193,4 @@ Capturas `.pcap` e `.pcapng` são ignoradas por padrão. Para versionar uma evid
 
 ## Estado do desenvolvimento
 
-Esta entrega prepara somente a estrutura inicial da Issue #01. Servidores HTTP/DNS, cliente, testes funcionais e captura ainda serão desenvolvidos. O [checklist do projeto](checklist.md) preserva as 14 issues e registra separadamente o que foi validado localmente e o que depende de publicação/revisão pelo grupo.
+A estrutura da Issue #01 está preservada. A Issue #02 dispõe de manual de preparação, topologia e diagnóstico local; a configuração e a conectividade nas máquinas reais permanecem pendentes. Servidores HTTP/DNS, cliente, testes funcionais e captura ainda serão desenvolvidos. O [checklist do projeto](checklist.md) preserva as 14 issues e registra separadamente o que foi validado localmente e o que depende do laboratório ou de publicação/revisão pelo grupo.
